@@ -1,0 +1,98 @@
+
+body{
+    font-family: 'Playfair Display', Georgia, serif;;
+    background: #4b3832;
+    color: #3c2f2f;
+}
+
+
+/*===============Section first===================*/
+
+.first .col-md-4{
+    background-color: white;
+}
+
+.first h3{
+    color: brown;
+}
+
+.empty{
+    width: 100%;
+    height: 80px;
+    background-color: #f7f0e7;
+}
+
+/*===============Section second===================*/
+
+.bg-dark{
+    background: rgb(133, 68, 66) !important;
+}
+
+#navbarNav ul li a{
+    color: white;
+    margin-right: 20px;
+}
+
+.happy{
+    background-color: rgb(226, 118, 81);
+}
+
+.happy a{
+    color: white;
+}
+
+/*===============Section third===================*/
+.third{
+    width: 100%;
+    height: auto;
+}
+
+.three{
+    padding: 0;
+}
+
+.three img{
+    width: 100%;
+}
+
+/*===============Section fourth===================*/
+
+.section_bg{
+   background-color: #f7f0e7 !important;
+    padding: 0;
+}
+
+
+.fourth h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+.text{
+    color: #4b3832;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.btn-deep-orange{
+    background: #e27651;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    padding: 14px 20px;
+}
+
+
+
+
+
+
+
+
+/*rgb(133, 68, 66)
+rgb(226, 118, 81);
+*/
