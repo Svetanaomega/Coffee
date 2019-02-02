@@ -86,13 +86,58 @@ body{
     padding: 14px 20px;
 }
 
+/*===============Section fifth===================*/
 
+.coffee_order{
+    background-color: white;
+    font-family: 'Playfair Display', Georgia, serif;
+}
 
+.coffee_order h3 {
+    font-size: 35px;
+    line-height: 46px;
+}
 
+.coffee_order p {
+    color: #999999;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+}
 
+/*===============Section sixth===================*/
 
+.breakfast{
+    background: rgb(133, 68, 66);
+}
 
+.breakfast h3 {
+    color: #fff;
+    font-size: 35px;
+    line-height: 46px;
+}
 
-/*rgb(133, 68, 66)
-rgb(226, 118, 81);
-*/
+.breakfast p {
+    color: #999999;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+}
+/*===============Section seventh===================*/
+
+.lunch{
+    background-color: white;
+}
+
+.lunch h3 {
+    color: #fff;
+    font-size: 35px;
+    line-height: 46px;
+}
+
+.lunch p {
+    color: #999999;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+}
