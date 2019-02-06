@@ -141,3 +141,103 @@ body{
     font-size: 14px;
     line-height: 28px;
 }
+
+/*===============Section eighth===================*/
+
+.picture img{
+    width: 100%;
+    height: 200px;
+}
+
+.two_picture img{
+    width: 100%;
+    height: 350px;
+}
+
+.bg{
+    background-color: rgb(226, 118, 81);
+}
+
+.bg h2{
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.bg p{
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: left;
+    color: #ffffff;
+}
+
+/*===============Section nine===================*/
+
+.contacts{
+    background: #e4d5c3;
+    padding-bottom: 20px;
+}
+
+.contacts h3{
+    color: #3c2f2f;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: left;
+}
+
+.contacts p{
+    color: #4b3832;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.table_name{
+    color: #3c2f2f;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.table_text{
+    color: #4b3832;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.table {
+    border-spacing: none;
+}
+
+table.table td {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*===============Section footer===================*/
+
+.footer{
+    padding-bottom: 20px;
+}
+
+.bottom{
+    background: rgb(133, 68, 66);
+    padding-bottom: 30px;
+}
+
+.footer img{
+    margin: 50px 15px;
+}
+
+.footer h6{
+    width: 100%;
+    text-align: center;
+    color: #e4d5c3;
+    padding-bottom: 20px;
+}
