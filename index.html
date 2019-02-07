@@ -15,6 +15,8 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/media.css">
+
 </head>
 
 <body>
@@ -45,23 +47,23 @@
                   <a class="nav-link" href="#">COFFEE <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">BEVERAGGES<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#BEVERAGES">BEVERAGES<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">BREAKFAST</a>
+                  <a class="nav-link" href="#BREAKFAST">BREAKFAST</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">LUNCH</a>
+                  <a class="nav-link" href="#LUNCH">LUNCH</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">DESSERTS</a>
+                  <a class="nav-link" href="#CONTACTS">CONTACTS</a>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
         <div class="col-md-3 happy d-flex align-items-center justify-content-center">
-          <a href="#">HAPPY HOUR</a>
+          <a href="#HAPPY">HAPPY HOUR</a>
         </div>
       </div>
     </div>
@@ -77,11 +79,38 @@
     <div class="container section_bg pl-5 pt-5 pb-4">
         <h3 class="Testes">New tastes ariving soon!</h3>
         <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-        <button type="button" class="btn btn-deep-orange">LEARN MORE</button>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-deep-orange" data-toggle="modal" data-target="#basicExampleModal">
+        LEARN MORE
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+           aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolores
+              earum enim illo magnam nihil officiis quidem quo repudiandae unde.
+              A ea eveniet facere nesciunt quo, quod ullam voluptate voluptates?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="fifth">
+  <section class="fifth" id="BEVERAGES">
     <div class="container coffee_order">
       <h3 class="pt-4 pb-4">Coffee</h3>
 
@@ -107,7 +136,53 @@
             <!--Text-->
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-deep-orange">ORDER</button>
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input type="text" id="form34" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input type="email" id="form29" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input type="text" id="form32" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form32">Phone</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div >
+              <a href="" class="btn btn-deep-orange" data-toggle="modal" data-target="#modalContactForm">ORDER
+              </a>
+            </div>
 
           </div>
 
@@ -133,7 +208,53 @@
             <!--Text-->
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-deep-orange">ORDER</button>
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input type="text" id="form34" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input type="email" id="form29" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input type="text" id="form32" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form32">Phone</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="" class="btn btn-default btn-deep-orange" data-toggle="modal" data-target="#modalContactForm">ORDER
+              </a>
+            </div>
 
           </div>
 
@@ -159,7 +280,53 @@
             <!--Text-->
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-deep-orange">ORDER</button>
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input type="text" id="form34" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input type="email" id="form29" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input type="text" id="form32" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form32">Phone</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="" class="btn btn-default btn-deep-orange" data-toggle="modal" data-target="#modalContactForm">ORDER
+              </a>
+            </div>
 
           </div>
 
@@ -172,7 +339,7 @@
     </div>
   </section>
 
-  <section class="sixth">
+  <section class="sixth" id="BREAKFAST">
     <div class="container breakfast">
       <h3 class="pt-4 pb-4">Breakfast</h3>
 
@@ -198,7 +365,53 @@
             <!--Text-->
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-deep-orange">ORDER</button>
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input type="text" id="form34" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input type="email" id="form29" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input type="text" id="form32" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form32">Phone</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="" class="btn btn-default btn-deep-orange" data-toggle="modal" data-target="#modalContactForm">ORDER
+              </a>
+            </div>
 
           </div>
 
@@ -224,7 +437,53 @@
             <!--Text-->
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-deep-orange">ORDER</button>
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input type="text" id="form34" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input type="email" id="form29" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input type="text" id="form32" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form32">Phone</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="" class="btn btn-default btn-deep-orange" data-toggle="modal" data-target="#modalContactForm">ORDER
+              </a>
+            </div>
 
           </div>
 
@@ -250,7 +509,53 @@
             <!--Text-->
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-deep-orange">ORDER</button>
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input type="text" id="form34" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input type="email" id="form29" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input type="text" id="form32" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form32">Phone</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="" class="btn btn-default btn-deep-orange" data-toggle="modal" data-target="#modalContactForm">ORDER
+              </a>
+            </div>
 
           </div>
 
@@ -262,7 +567,7 @@
     </div>
   </section>
 
-  <section class="seventh">
+  <section class="seventh" id="LUNCH">
     <div class="container lunch">
       <h3 class="pt-4 pb-4">Lunch</h3>
 
@@ -288,7 +593,53 @@
             <!--Text-->
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-deep-orange">ORDER</button>
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input type="text" id="form34" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input type="email" id="form29" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input type="text" id="form32" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form32">Phone</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="" class="btn btn-default btn-deep-orange" data-toggle="modal" data-target="#modalContactForm">ORDER
+              </a>
+            </div>
 
           </div>
 
@@ -314,7 +665,53 @@
             <!--Text-->
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-deep-orange">ORDER</button>
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input type="text" id="form34" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input type="email" id="form29" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input type="text" id="form32" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form32">Phone</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="" class="btn btn-default btn-deep-orange" data-toggle="modal" data-target="#modalContactForm">ORDER
+              </a>
+            </div>
 
           </div>
 
@@ -340,7 +737,53 @@
             <!--Text-->
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-deep-orange">ORDER</button>
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                      <i class="fas fa-user prefix grey-text"></i>
+                      <input type="text" id="form34" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-envelope prefix grey-text"></i>
+                      <input type="email" id="form29" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="fas fa-tag prefix grey-text"></i>
+                      <input type="text" id="form32" class="form-control validate">
+                      <label data-error="wrong" data-success="right" for="form32">Phone</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil prefix grey-text"></i>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="" class="btn btn-default btn-deep-orange" data-toggle="modal" data-target="#modalContactForm">ORDER
+              </a>
+            </div>
 
           </div>
 
@@ -352,7 +795,7 @@
     </div>
   </section>
 
-  <section class="eighth">
+  <section class="eighth" id="HAPPY">
     <div class="container p-0">
       <div class="row picture m-0">
         <img src="images/t11_free_image11.jpg" alt="image11">
@@ -406,13 +849,13 @@
     </div>
   </section>
 
-  <section class="footer">
+  <section class="footer" id="CONTACTS">
     <div class="container bottom">
       <div class="row justify-content-center">
-        <img src="images/t11_free_ico_facebook.jpg" alt="facebook">
-        <img src="images/t11_free_ico_twitter.jpg" alt="twitter">
-        <img src="images/t11_free_ico_instagram.jpg" alt="instagram">
-        <img src="images/t11_free_ico_linkedin.jpg" alt="linkedin"> <br>
+        <a href="#!"><img src="images/t11_free_ico_facebook.jpg" alt="facebook"></a>
+        <a href="#!"><img src="images/t11_free_ico_twitter.jpg" alt="twitter"></a>
+        <a href="#!"><img src="images/t11_free_ico_instagram.jpg" alt="instagram"></a>
+        <a href="#!"><img src="images/t11_free_ico_linkedin.jpg" alt="linkedin"></a><br>
       </div>
       <div class="row justify-content-center">
         <h6>Coffe Break - Free HTML Email Template</h6>
@@ -437,3 +880,5 @@
 </body>
 
 </html>
+
+
